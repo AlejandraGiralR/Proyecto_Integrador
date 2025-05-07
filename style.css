@@ -11,8 +11,9 @@ html{
 }
 
 header{
-    background-image: url(imagenes/banner-1050629_1280.jpg);
-    background-color: rgb(48, 151, 186);
+    
+    background-color: #f5f5f5;
+    color:#003366;
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -28,7 +29,7 @@ nav{
 }
 nav a{
     
-    color: aqua;
+    color:  #003366;
     border-radius: 0%;
     padding: 15px;
     text-align: center;
@@ -36,29 +37,83 @@ nav a{
     box-shadow: 1px 2px 8px 7px;
 }
 nav a:hover{
-    background-color: beige;
+    background-color: #003366;
+    color: #f5f5f5;
     
 }
 
 body{
-    background-image: url(Imagenes/fondo.jpg) ;
+    background-image: url(Imagenes/F5F5F5.png) ;
     background-repeat: no-repeat;
     background-size: cover;
 }
+img{
+    width: 100%;
+    justify-content: center;
+}
 
+.planes{
+    border: 2px solid black;
+}
 .main{
+    display: flex;
+    gap: 50px;
+    background-color: rgba(30, 1, 41, 0.3); 
+    font-style: italic;
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+.banner{
+    justify-content: center;
+    text-align: center;
+}
+ h2{
+    text-align: center;
+ }
+
+ .tipos{
+    border: 2px solid #003366;
+ }
+ 
+.vehiculos{
     display: flex;
     gap: 50px;
     background-color: rgba(30, 1, 41, 0.3);
     font-style: italic;
-    margin: 20px;
-    padding: 20px;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 10px;
+    
+
 }
 
+.tipos img{
+    display: flex;
+    justify-content: center;
+    width: 30vh;
+    
+}
 
 footer{
-    background-color: rgb(211, 82, 240);
-    height: 45px;
+    background-color: rgba(0, 51, 102, 0.8);
+    color: #fff;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+footer a{
+    color: #fff;
+}
+
+footer img{
+    width: 40px;
+    
 }
 
 
