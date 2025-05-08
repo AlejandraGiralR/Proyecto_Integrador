@@ -21,6 +21,44 @@
         <div class="banner">
             <img src="imagenes/Banner.png" alt="Banner">
           </div>
+         <br>
+         <h2>Formulario Cliente</h2>
+
+         <form action="">
+ 
+             <label for="lnombrec">Nombre completo</label>
+             <input type="text" name="nombrec" id="lnombre"><br>
+             <br>
+             <label for="nit">Numero documento/ Nit</label>
+             <input type="text" name="nit" id="nit" pattern="[0-9]{8,10}"  placeholder=" 8 a 10 digitos"><br>
+             <br>
+             <label for="lcorreo">Email</label>
+             <input type="email" name="correo" id="lcorreo"><br>
+             <br>
+             <label for="ltelefono">Numero movil</label>
+             <input type="tel" name="telefono" id="ltelefono" pattern="[0-9]{10}" placeholder="numero movil"><br>
+             <br>
+ 
+             <input type="submit" value="Enviar Formulario">
+             <input type="reset" value="Reiniciar">
+         </form>
+             <br>
+             <h2>Formulario Vehiculo</h2>
+ 
+             <label for="placa">Numero de placa</label>
+             <input type="text" name="placa" id="placa" pattern="[A-Za-z0-9]{6}"><br>
+             <br>
+             <label for="modelo">Modelo del Vehiculo</label>
+             <input type="text" name="modelo" id="modelo"><br>
+             <br>
+             <label for="tipo">Tipo Vehiculo</label>
+             <input type="text" name="tipo" id="tipo">
+ 
+             <input type="submit" value="Enviar Formulario">
+             <input type="reset" value="Reiniciar">
+             
+
+
     </main>
     <footer>
         <p>Todos los derechos reservados</p>
