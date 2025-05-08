@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <h1>Contactos</h1>
+    </header>
     <nav>
       <a href="index.html" target="_blank">Inicio</a>
       <a href="formulario.html" target="_blank">Formulario</a>
@@ -14,21 +17,59 @@
       <a href="logica.html" target="_blank">Logica</a>
       <a href="Contactos.html" target="_blank">Contactos</a>
     </nav>
-    <header>
-      <h1>Contactos</h1>
-    </header>
+    
     <main>
         <div class="banner">
             <img src="imagenes/Banner.png" alt="Banner">
+          </div>
+          <div class="team-section">
+            <h2>Nuestros Gerentes</h2>
+            <div class="team">
+              <div class="manager-card">
+                <h3>Alejandra Giraldo</h3>
+                <p><strong>Cargo:</strong> Gerente General</p>
+                <p><strong>Correo:</strong> alejandra.giraldo@hda.com</p>
+              </div>
+              <div class="manager-card">
+                <h3>Diego Carvajal</h3>
+                <p><strong>Cargo:</strong> Gerente de Operaciones</p>
+                <p><strong>Correo:</strong> diego.carvajal@hda.com</p>
+              </div>
+              <div class="manager-card">
+                <h3>Hector Lugo</h3>
+                <p><strong>Cargo:</strong> Gerente de Finanzas</p>
+                <p><strong>Correo:</strong> hector.lugo@hda.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-container">
+            <h2>Contáctanos</h2>
+            <form>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+        
+              <label for="correo">Correo electrónico:</label>
+              <input type="email" id="correo" name="correo" required>
+        
+              <label for="asunto">Asunto:</label>
+              <input type="text" id="asunto" name="asunto" required>
+        
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" required></textarea>
+              <div class="buttons">
+              <button type="submit">Enviar mensaje</button>
+            </div>
+            </form>
           </div>
     </main>
     <footer>
         <p>Todos los derechos reservados</p>
       <p><a href="#">Tratamiento de datos</a></p>
       <div class="redes">
-          <img src="images/facebook.png" alt="Logo facebook">
-          <img src="images/instagram.png" alt="Logo instagram">
-          <img src="images/whatsapp.png" alt="Logo whatsapp">
+          <img src="imagenes/facebook.png" alt="Logo facebook">
+          <img src="imagenes/instagram.png" alt="Logo instagram">
+          <img src="imagenes/whatsapp.png" alt="Logo whatsapp">
       </div>
     </footer>
   </body>

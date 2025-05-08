@@ -112,31 +112,10 @@ footer a{
 }
 
 footer img{
-    width: 40px;
+    width: 30px;
     
 }
 
-/* hoja formulario*/
-
-.form-container {
-    border: 2px solid #007BFF; /* Borde azul */
-    padding: 20px;
-    margin: 30px auto;
-    width: 50%;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    text-align: center;
-    color: #333;
-    font-size: 1.5em;
-}
-
-.form-group {
-    margin-bottom: 20px; /* Espacio entre los grupos */
-}
 
 label {
     display: block;
@@ -146,42 +125,86 @@ label {
     color: #333;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="number"],
-input[type="submit"],
-input[type="reset"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
+.buttons {
+    margin-top: 15px;
+  }
 
-input[type="submit"],
-input[type="reset"] {
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
+  .buttons button {
+    padding: 8px 15px;
+    margin-right: 10px;
     border: none;
-}
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #003366;
+  }
 
-input[type="submit"]:hover,
-input[type="reset"]:hover {
-    background-color: #0056b3;
-}
+  .buttons button:hover{
+    background-color: #f5f5f5;
+    color: #003366;
+  }
+
+
+
 
 .form-actions {
     text-align: center; /* Centrar los botones */
 }
 
-input[type="reset"] {
-    margin-left: 10px;
-}
 
 input::placeholder {
     color: #888; /* Color de los placeholders */
 }
+
+.contact-container {
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-form, .team-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+
+ 
+  .manager-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 250px;
+
+    transition: transform 0.2s;
+  }
+
+  .manager-card:hover {
+    transform: translateX(10px);
+  }
+
+  .manager-card h3 {
+    margin: 0 0 10px;
+    color: #003366;
+  }
+
+  .manager-card p {
+    margin: 5px 0;
+    color: #333;
+  }
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: none;
+  }
+textarea {
+    height: 120px;
+  }

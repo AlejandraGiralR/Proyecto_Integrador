@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <h1>Formularios</h1>
+    </header>
     <nav>
       <a href="index.html" target="_blank">Inicio</a>
       <a href="formulario.html" target="_blank">Formulario</a>
@@ -14,9 +17,7 @@
       <a href="logica.html" target="_blank">Logica</a>
       <a href="Contactos.html" target="_blank">Contactos</a>
     </nav>
-    <header>
-      <h1>Formularios</h1>
-    </header>
+    
     <main>
         <div class="banner">
             <img src="imagenes/Banner.png" alt="Banner">
@@ -27,35 +28,42 @@
          <form action="">
  
              <label for="lnombrec">Nombre completo</label>
-             <input type="text" name="nombrec" id="lnombre"><br>
-             <br>
+             <input type="text" name="nombrec" id="lnombre">
+
              <label for="nit">Numero documento/ Nit</label>
-             <input type="text" name="nit" id="nit" pattern="[0-9]{8,10}"  placeholder=" 8 a 10 digitos"><br>
-             <br>
+             <input type="text" name="nit" id="nit" pattern="[0-9]{8,10}"  placeholder=" 8 a 10 digitos">
+
              <label for="lcorreo">Email</label>
-             <input type="email" name="correo" id="lcorreo"><br>
-             <br>
+             <input type="email" name="correo" id="lcorreo">
+
              <label for="ltelefono">Numero movil</label>
-             <input type="tel" name="telefono" id="ltelefono" pattern="[0-9]{10}" placeholder="numero movil"><br>
-             <br>
+             <input type="tel" name="telefono" id="ltelefono" pattern="[0-9]{10}" placeholder="numero movil">
  
-             <input type="submit" value="Enviar Formulario">
-             <input type="reset" value="Reiniciar">
+             <div class="buttons">
+              <button type="button" class="create">Crear</button>
+              <button type="button" class="read">Leer</button>
+              <button type="button" class="update">Actualizar</button>
+              <button type="button" class="delete">Eliminar</button>
+            </div>
          </form>
              <br>
              <h2>Formulario Vehiculo</h2>
  
              <label for="placa">Numero de placa</label>
-             <input type="text" name="placa" id="placa" pattern="[A-Za-z0-9]{6}"><br>
-             <br>
+             <input type="text" name="placa" id="placa" pattern="[A-Za-z0-9]{6}">
+
              <label for="modelo">Modelo del Vehiculo</label>
-             <input type="text" name="modelo" id="modelo"><br>
-             <br>
+             <input type="text" name="modelo" id="modelo">
+
              <label for="tipo">Tipo Vehiculo</label>
              <input type="text" name="tipo" id="tipo">
  
-             <input type="submit" value="Enviar Formulario">
-             <input type="reset" value="Reiniciar">
+             <div class="buttons">
+              <button type="button" class="create">Crear</button>
+              <button type="button" class="read">Leer</button>
+              <button type="button" class="update">Actualizar</button>
+              <button type="button" class="delete">Eliminar</button>
+            </div>
              
 
 
@@ -64,9 +72,9 @@
         <p>Todos los derechos reservados</p>
       <p><a href="#">Tratamiento de datos</a></p>
       <div class="redes">
-          <img src="images/facebook.png" alt="Logo facebook">
-          <img src="images/instagram.png" alt="Logo instagram">
-          <img src="images/whatsapp.png" alt="Logo whatsapp">
+          <img src="imagenes/facebook.png" alt="Logo facebook">
+          <img src="imagenes/instagram.png" alt="Logo instagram">
+          <img src="imagenes/whatsapp.png" alt="Logo whatsapp">
       </div>
     </footer>
   </body>
