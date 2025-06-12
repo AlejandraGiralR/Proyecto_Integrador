@@ -52,6 +52,13 @@ img{
     justify-content: center;
 }
 
+
+.carousel-item img {
+  height: 400px;          
+  object-fit: cover;      
+  width: 800%;            
+}
+
 .planes{
     border: 2px solid black;
 }
