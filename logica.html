@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Seguro Vehicular</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .section { margin-bottom: 20px; }
+    .hidden { display: none; }
+    label { display: block; margin-top: 10px; }
+  </style>
   </head>
   <body>
     <nav>
@@ -22,6 +28,111 @@
             <img src="imagenes/Banner.png" alt="Banner">
           </div>
     </main>
+    <div class="section">
+    <label>Nombre: <input type="text" id="nombre"></label>
+    <label>Documento: <input type="number" id="documento"></label>
+    <label>Edad: <input type="number" id="edad"></label>
+    <label>Tipo de Vehículo:
+      <select id="tipoVehiculo">
+        <option value="">-- Seleccione --</option>
+        <option value="1">Carro</option>
+        <option value="2">Moto</option>
+        <option value="3">Bicicleta</option>
+      </select>
+    </label>
+    <label>Modelo: <input type="number" id="modelo"></label>
+    <button onclick="cotizar()">Cotizar</button>
+  </div>
+
+  <div class="section hidden" id="cotizacionResult">
+    <h3>Resultado de la Cotización</h3>
+    <p id="cotizacionTexto"></p>
+    <button onclick="mostrarPago()">Proceder al Pago</button>
+  </div>
+
+  <div class="section hidden" id="pagoSection">
+    <label>Ingrese monto a pagar: <input type="number" id="montoPago"></label>
+    <button onclick="realizarPago()">Pagar</button>
+    <p id="mensajePago"></p>
+  </div>
+
+  <script>
+    let costoCotizacion = 0;
+
+    function cotizar() {
+      const nombre = document.getElementById('nombre').value;
+      const documento = document.getElementById('documento').value;
+      const edad = parseInt(document.getElementById('edad').value);
+      const tipoVehiculo = parseInt(document.getElementById('tipoVehiculo').value);
+      const modelo = parseInt(document.getElementById('modelo').value);
+
+      if (!nombre || !documento || !edad || !tipoVehiculo || !modelo) {
+        alert('Por favor, complete todos los campos.');
+        return;
+      }
+
+      let tipoSeguro = '';
+      let costoBase = 0, costoAdicional = 0, interes = 0;
+
+      switch (tipoVehiculo) {
+        case 1:
+          tipoSeguro = 'Seguro de Carro';
+          costoBase = 100000;
+          costoAdicional = 10000;
+          interes = 0.08;
+          break;
+        case 2:
+          tipoSeguro = 'Seguro de Moto';
+          costoBase = 50000;
+          costoAdicional = 5000;
+          interes = 0.05;
+          break;
+        case 3:
+          tipoSeguro = 'Seguro de Bicicleta';
+          costoBase = 20000;
+          costoAdicional = 2000;
+          interes = 0.03;
+          break;
+        default:
+          alert('Tipo de vehículo inválido.');
+          return;
+      }
+
+      costoCotizacion = costoBase + costoAdicional + (costoBase * interes);
+
+      document.getElementById('cotizacionTexto').innerHTML = `
+        <strong>Tipo de Seguro:</strong> ${tipoSeguro}<br>
+        <strong>Costo Base:</strong> $${costoBase}<br>
+        <strong>Adicional:</strong> $${costoAdicional}<br>
+        <strong>Interés:</strong> ${(interes * 100)}%<br>
+        <strong>Total a Pagar:</strong> $${costoCotizacion.toFixed(2)}
+      `;
+      document.getElementById('cotizacionResult').classList.remove('hidden');
+      document.getElementById('pagoSection').classList.add('hidden');
+      document.getElementById('mensajePago').innerText = '';
+    }
+
+    function mostrarPago() {
+      document.getElementById('pagoSection').classList.remove('hidden');
+    }
+
+    function realizarPago() {
+      const monto = parseFloat(document.getElementById('montoPago').value);
+      const mensaje = document.getElementById('mensajePago');
+
+      if (isNaN(monto)) {
+        mensaje.innerText = 'Por favor, ingrese un monto válido.';
+        return;
+      }
+
+      if (monto >= costoCotizacion) {
+        mensaje.innerText = '✅ Pago exitoso. El seguro ha sido contratado.';
+      } else {
+        mensaje.innerText = `❌ Pago insuficiente. Se requiere $${costoCotizacion.toFixed(2)}`;
+      }
+    }
+  </script>
+
     <footer>
         <p>Todos los derechos reservados</p>
       <p><a href="#">Tratamiento de datos</a></p>
