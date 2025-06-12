@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seguro Vehicular</title>
+    <title>Logica</title>
     <link rel="stylesheet" href="style.css" />
     <style>
     body { font-family: Arial, sans-serif; padding: 20px; }
@@ -101,11 +101,17 @@
       costoCotizacion = costoBase + costoAdicional + (costoBase * interes);
 
       document.getElementById('cotizacionTexto').innerHTML = `
+        <br>
         <strong>Tipo de Seguro:</strong> ${tipoSeguro}<br>
+        <br>
         <strong>Costo Base:</strong> $${costoBase}<br>
+        <br>
         <strong>Adicional:</strong> $${costoAdicional}<br>
+        <br>
         <strong>Interés:</strong> ${(interes * 100)}%<br>
+        <br>
         <strong>Total a Pagar:</strong> $${costoCotizacion.toFixed(2)}
+        <br>
       `;
       document.getElementById('cotizacionResult').classList.remove('hidden');
       document.getElementById('pagoSection').classList.add('hidden');
