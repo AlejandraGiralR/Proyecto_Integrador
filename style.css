@@ -53,10 +53,12 @@ img{
 }
 
 
-.carousel-item img {
-  height: 400px;          
-  object-fit: cover;      
-  width: 800%;            
+
+.carousel-item img{
+  width: 40%;          
+  object-fit: contain;      
+  height: 400px;
+  display: block;           
 }
 
 .planes{
