@@ -217,3 +217,7 @@ input, textarea {
 textarea {
     height: 120px;
   }
+
+.buttons {
+  margin: 10px;
+}
