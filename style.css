@@ -124,7 +124,7 @@ footer img{
 }
 
 
-label {
+.section label {
     display: block;
     font-size: 1.1em;
     font-weight: bold;
@@ -136,7 +136,7 @@ label {
     margin-top: 15px;
   }
 
-  .buttons button {
+  .buttons button, .section button {
     padding: 8px 15px;
     margin-right: 10px;
     border: none;
@@ -147,7 +147,7 @@ label {
     background-color: #003366;
   }
 
-  .buttons button:hover{
+  .buttons button:hover, .section button:hover{
     background-color: #f5f5f5;
     color: #003366;
   }
@@ -170,7 +170,15 @@ input::placeholder {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 500px;
   }
+
+  .contact-container label{
+     display: flex;
+      margin-bottom: 5px;
+      font-weight: bold;
+  }
+
 
   .contact-form, .team-section {
     background-color: #fff;
@@ -215,3 +223,4 @@ input, textarea {
 textarea {
     height: 120px;
   }
+  

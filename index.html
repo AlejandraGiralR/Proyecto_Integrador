@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Seguros DAC</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
+    <title>Seguros</title>
 </head>
 <body>
     <header>
         <div class="logo">
           <img src="" alt="">  
         </div>
-        <h1>Seguros DAC</h1>
+        <h1>Seguros DACES</h1>
     </header>
+<hr class="border border-primary border-3 opacity-75">
+
     <nav>
       <a href="index.html" target="_blank">Inicio</a>
       <a href="diagrama.html" target="_blank">Diagrama</a>
@@ -22,6 +25,8 @@
       <a href="logica.html" target="">Logica</a>
       <a href="Contactos.html" target="_blank">Contactos</a>
     </nav>
+    <hr class="border border-primary border-3 opacity-75">
+
     <main>
       <div class="banner">
         <img src="imagenes/Banner.png" alt="Banner">
@@ -43,52 +48,91 @@
     <div class="carousel-item">
       <img src="imagenes/bicicleta.png" class="d-block w-100" alt="bicicleta">
     </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
     <hr>
-      
-          <div class="container text-center">
-  <div class="row align-items-start">
-    <div class="col">
-      <h3>Plan Basico</h3>
-            <p>Cobertura principal: Responsabilidad Civil
-              Incluye:
-              Daños a terceros (personas y bienes)
-              Defensa legal
-              Asistencia vial básica (remolque por avería, paso de corriente)</p>
+      <!-- <div class="planes">
+      <h2>Nuestros planes</h2>
+        <div class="main">
+         <div class="basico">
+            <h3>Plan Basico</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ex cupiditate aperiam laudantium, magnam ipsa cum eos recusandae veritatis autem pariatur eligendi praesentium tempora unde hic? Quos facilis qui quasi cupiditate? Adipisci necessitatibus iste similique incidunt velit porro eveniet cupiditate, iusto ratione sequi earum nisi, maiores sit architecto reprehenderit ut!</p>
+         </div>
+         <div class="especial">
+            <h3>Plan Especial</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos accusamus, quae quos quaerat nihil doloribus similique reprehenderit odit, distinctio aliquid accusantium iusto tenetur architecto deleniti repudiandae incidunt est. Soluta, iure!</p>
+         </div>
+         <div class="premium">
+            <h3>Plan Premium</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam non earum voluptate saepe consequuntur eius consectetur deserunt, ipsam atque qui repellendus iure? Tenetur voluptatibus harum natus excepturi odio perferendis ex hic minima omnis modi voluptates repudiandae ducimus autem expedita ullam repellendus ratione assumenda in saepe, eaque quidem, a similique magni?</p>
+         </div>
+          </div>
+        </div> -->
+
+        <div class="container py-5">
+  <h2 class="text-center mb-4">Elige tu Plan de Seguro Vehicular</h2>
+  <div class="row text-center">
+
+    <!-- Plan Básico -->
+    <div class="col-md-4 d-flex">
+      <div class="card border-primary shadow-sm">
+        <div class="card-header bg-primary text-white">
+          <h4 class="my-0">Básico</h4>
+        </div>
+        <div class="card-body text-start">
+          <h3>Este plan tiene para ti</h3>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Robo o daño total</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Cobertura contra terceros</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Asistencia en carretera</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Atención telefónica 24/7</li>
+            
+          </ul>
+          <button type="button" class="btn btn-outline-primary">Elegir Plan</button>
+        </div>
+      </div>
     </div>
-    <div class="col">
-      <h3>Plan Especial</h3>
-            <p>Cobertura principal: Responsabilidad civil + cobertura parcial al vehículo
-              Incluye todo lo del Plan Básico, más: 
-              Robo total del vehículo
-              Daños por incendio
-              Asistencia vial extendida (grúa, cerrajería, gasolina)
-              Gastos médicos a ocupantes</p>
+
+    <!-- Plan Estándar -->
+    <div class="col-md-4 d-flex">
+      <div class="card border-success shadow-sm">
+        <div class="card-header bg-primary text-white">
+          <h4 class="my-0">Estándar</h4>
+        </div>
+        <div class="card-body text-start">
+          <h3>Este plan tiene para ti</h3>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Todo lo del plan Básico</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Cobertura contra robo parcial</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Auto sustituto</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Asistencia juridica virtual</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Taller movil</li>
+          </ul>
+          <button type="button" class="btn btn-outline-success">Elegir Plan</button>
+        </div>
+      </div>
     </div>
-    <div class="col">
-      <h3>Plan Premium</h3>
-            <p>Cobertura principal: Cobertura total (todo riesgo)
-              Incluye todo lo del Plan Especial, más:
-              Daños al propio vehículo por choque o volcadura
-              Robo parcial (espejos, llantas, accesorios)
-              Daños por fenómenos naturales (inundaciones, granizo, terremoto)
-              Auto sustituto en caso de siniestro
-              Asistencia legal completa y trámites ante autoridades
-              Cobertura en el extranjero (opcional)</p>
+
+    <!-- Plan Premium -->
+    <div class="col-md-4 d-flex">
+      <div class="card border-warning shadow-sm">
+        <div class="card-header bg-primary text-white">
+          <h4 class="my-0">Premium</h4>
+        </div>
+        <div class="card-body text-start">
+          <h3>Este plan tiene para ti</h3>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Todo lo del plan Estándar</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Cobertura total por daños y robo</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Seguro para conductor y acompañantes</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Grúa en ciudad principal</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Renta diaria por hospitalización</li>
+          </ul>
+          <button type="button" class="btn btn-outline-warning">Elegir Plan</button>
+        </div>
+      </div>
     </div>
+
   </div>
 </div>
-      
              
     </main>
     
@@ -101,7 +145,7 @@
           <img src="imagenes/whatsapp.png" alt="Logo whatsapp">
       </div>
   </footer>
-         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
 </body>
 </html>
