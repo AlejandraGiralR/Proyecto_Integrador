@@ -229,3 +229,16 @@ textarea {
 .buttons {
   margin: 10px;
 }
+
+.java img{
+  width: 40%;          
+  object-fit: contain;      
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.diagrama img{
+  margin: 10px;
+}
