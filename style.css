@@ -242,3 +242,8 @@ textarea {
 .diagrama img{
   margin: 10px;
 }
+
+.java img{
+  width: 50%;
+  height: 50%;
+}
